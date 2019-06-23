@@ -12,5 +12,11 @@
   margin-bottom: 10px;
 }
 
-.menuItems {
+img {
+  width: 20%;
+}
+
+.jumbotron {
+  text-align: center;
+  padding: 20px;
 }

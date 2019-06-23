@@ -51,7 +51,26 @@ const Gallery = () => {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+        <div className='embed-responsive embed-responsive-16by9'>
+          <iframe
+            className='embed-responsive-item'
+            src='//www.youtube.com/embed/zpOULjyy-n8?rel=0'
+          />
+        </div>
+        <div className='embed-responsive embed-responsive-16by9'>
+          <iframe
+            className='embed-responsive-item'
+            src='//www.youtube.com/embed/zpOULjyy-n8?rel=0'
+          />
+        </div>
+        <div className='embed-responsive embed-responsive-16by9'>
+          <iframe
+            className='embed-responsive-item'
+            src='//www.youtube.com/embed/zpOULjyy-n8?rel=0'
+          />
+        </div>
       </Container>
+
       <Breadcrumb className='crumb'>
         <Breadcrumb.Item href='/'>Home</Breadcrumb.Item>
         <Breadcrumb.Item href='/about'>About</Breadcrumb.Item>
@@ -62,3 +81,11 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
+/**
+|--------------------------------------------------
+- Carousel (photo gallery of some photos you took) (with controls, indicators, and captions)
+- Embeds (few of your favorite music videos from YouTube)
+
+|--------------------------------------------------
+*/

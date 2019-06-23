@@ -1,23 +1,16 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 const CustomNavbar = () => {
   return (
     <>
-      <Navbar
-        collapseOnSelect
-        expand='md'
-        sticky='top'
-        bg='dark'
-        variant='dark'
-      >
+      <Navbar collapseOnSelect expand='md' bg='dark' variant='dark'>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='mr-auto'>
             <Nav.Link href='/'>
               <i className='material-icons md-18'>home</i>
             </Nav.Link>
-
             <NavDropdown title='About' id='basic-nav-dropdown'>
               <NavDropdown.Item href='/about'>Who am I?</NavDropdown.Item>
               <NavDropdown.Item href='/resume'>Resume</NavDropdown.Item>

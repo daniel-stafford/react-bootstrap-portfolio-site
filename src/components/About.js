@@ -1,16 +1,16 @@
 import React from 'react';
-import { Breadcrumb, Container } from 'react-bootstrap';
+import { Breadcrumb, Container, Jumbotron, Image } from 'react-bootstrap';
 import '../style/style.css';
 
 const About = () => {
   return (
     <>
       <Container fluid='true' className='container'>
-        <h2>About</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-          sapiente pariatur, suscipit voluptatum odio tempora!
-        </p>
+        <Jumbotron>
+          <h2>Moi! I'm Daniel</h2>
+          <p>I'm a web developer living in Helsinki, Finland.</p>
+          <Image src={require('../images/profile2.jpg')} thumbnail />
+        </Jumbotron>
       </Container>
       <Breadcrumb className='crumb'>
         <Breadcrumb.Item href='/'>Home</Breadcrumb.Item>
@@ -22,3 +22,11 @@ const About = () => {
 };
 
 export default About;
+
+/**
+|--------------------------------------------------
+- Jumbotron (introducing yourself) DONE
+- Images (proper style for your photo) DONE
+
+|--------------------------------------------------
+*/
