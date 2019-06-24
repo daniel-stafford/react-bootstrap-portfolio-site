@@ -1,15 +1,17 @@
 .breadcrumb {
-  padding: 2px;
-  position: fixed;
-  width: 100%;
+  position: sticky;
+  right: 0;
   bottom: 0;
+  left: 0;
+  background-color: white;
+  text-align: center;
   margin-bottom: 0;
-  margin-top: 10px;
 }
 
 .container {
   margin-top: 10px;
   margin-bottom: 10px;
+  justify-content: center;
 }
 
 img {
@@ -19,4 +21,27 @@ img {
 .jumbotron {
   text-align: center;
   padding: 20px;
+}
+
+.projectContainer {
+  margin: 10px;
+}
+
+.row {
+  justify-content: center;
+}
+
+.card-img-top {
+  height: 100px;
+}
+
+#galleryContainer {
+  margin: 10px;
+}
+.badgeContainer {
+  margin: 10px;
+}
+
+.progress {
+  margin-top: 10px;
 }

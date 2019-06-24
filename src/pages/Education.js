@@ -1,6 +1,5 @@
 import React from 'react';
 import { Breadcrumb, Container } from 'react-bootstrap';
-import { UncontrolledCollapse, Button, CardBody, Card } from 'reactstrap';
 import Collapse from '../components/Collapse';
 import '../style/style.css';
 

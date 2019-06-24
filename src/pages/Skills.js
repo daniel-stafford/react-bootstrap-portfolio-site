@@ -1,5 +1,6 @@
 import React from 'react';
-import { Breadcrumb, Container, Badge, ProgressBar } from 'react-bootstrap';
+import { Breadcrumb, Container, Row } from 'react-bootstrap';
+import SkillBadge from '../components/SkillBadge';
 import '../style/style.css';
 
 const Skills = () => {
@@ -7,35 +8,58 @@ const Skills = () => {
     <>
       <Container fluid='true' className='container'>
         <h2>Skills</h2>
-        <div>
-          <h1>
-            Example heading <Badge variant='secondary'>New</Badge>
-          </h1>
-          <h2>
-            Example heading <Badge variant='primary'>New</Badge>
-          </h2>
-          <h3>
-            Example heading <Badge variant='info'>New</Badge>
-          </h3>
-          <h4>
-            Example heading <Badge variant='danger'>New</Badge>
-          </h4>
-          <h5>
-            Example heading <Badge variant='secondary'>New</Badge>
-          </h5>
-          <h6>
-            Example heading <Badge variant='primary'>New</Badge>
-          </h6>
-        </div>
+        <Row className='badgeRow'>
+          <SkillBadge
+            badgeColor='primary'
+            skillName='HTML'
+            progressColor='success'
+            progress='90'
+          />
+          <SkillBadge
+            badgeColor='success'
+            skillName='CSS'
+            progressColor='success'
+            progress='70'
+          />
+          <SkillBadge
+            badgeColor='danger'
+            skillName='JavaScript'
+            progressColor='success'
+            progress='90'
+          />
+          <SkillBadge
+            badgeColor='warning'
+            skillName='React'
+            progressColor='success'
+            progress='60'
+          />
+          <SkillBadge
+            badgeColor='info'
+            skillName='Node'
+            progressColor='success'
+            progress='30'
+          />
+          <SkillBadge
+            badgeColor='primary'
+            skillName='Git'
+            progressColor='success'
+            progress='70'
+          />
+          <SkillBadge
+            badgeColor='light'
+            skillName='MongoDB'
+            progressColor='success'
+            progress='30'
+          />
+          <SkillBadge
+            badgeColor='secondary'
+            skillName='Scala'
+            progressColor='success'
+            progress='40'
+          />
+        </Row>
       </Container>
-      <Container>
-        <div>
-          <ProgressBar striped variant='success' now={40} />
-          <ProgressBar striped variant='info' now={20} />
-          <ProgressBar striped variant='warning' now={60} />
-          <ProgressBar striped variant='danger' now={80} />
-        </div>
-      </Container>
+
       <Breadcrumb>
         <Breadcrumb.Item href='/'>Home</Breadcrumb.Item>
         <Breadcrumb.Item href='/about'>About</Breadcrumb.Item>
@@ -49,7 +73,7 @@ export default Skills;
 
 /**
 |--------------------------------------------------
-- Badge (for new skills during the last year you learned)
+- Badge (for new skills during the last year you learned) Done
 - Progress (for each skill show the progress and according to the progress choose a style according to it)
 
 |--------------------------------------------------

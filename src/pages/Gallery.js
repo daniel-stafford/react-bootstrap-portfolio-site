@@ -7,70 +7,66 @@ const Gallery = () => {
     <>
       <Container fluid='true' className='container'>
         <h2>Gallery</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-          sapiente pariatur, suscipit voluptatum odio tempora!
-        </p>
-
+        <p>Somewhat random photos and music videos.</p>
         <Carousel>
           <Carousel.Item>
             <img
               className='d-block w-100'
-              src='https://cdn.pixabay.com/photo/2019/06/19/22/47/thundercloud-4285782_960_720.jpg'
+              src={require('../images/carousel/hanko.JPG')}
               alt='First slide'
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>Hanko</h3>
+              <p>Southernmost point of Finland</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               className='d-block w-100'
-              src='https://cdn.pixabay.com/photo/2019/06/20/05/51/squirrel-4286247_960_720.jpg'
+              src={require('../images/carousel/dogs2.jpg')}
               alt='Second slide'
             />
 
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3>Dogs</h3>
+              <p>A couple of dogs I know</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               className='d-block w-100'
-              src='https://cdn.pixabay.com/photo/2019/06/19/19/52/magpie-4285551_960_720.jpg'
+              src={require('../images/carousel/lunch.jpg')}
               alt='Third slide'
             />
 
             <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+              <h3>Student Lunch</h3>
+              <p>My favorite thing about Finland</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-        <div className='embed-responsive embed-responsive-16by9'>
+        <div className='embed-responsive embed-responsive-4by3'>
           <iframe
+            title='music video'
             className='embed-responsive-item'
-            src='//www.youtube.com/embed/zpOULjyy-n8?rel=0'
+            src='//www.youtube.com/embed/IMyqasy2Lco'
           />
         </div>
-        <div className='embed-responsive embed-responsive-16by9'>
+        <div className='embed-responsive embed-responsive-4by3'>
           <iframe
+            title='music video'
             className='embed-responsive-item'
-            src='//www.youtube.com/embed/zpOULjyy-n8?rel=0'
+            src='//www.youtube.com/embed/FqJdzYY_Fas'
           />
         </div>
-        <div className='embed-responsive embed-responsive-16by9'>
+        <div className='embed-responsive embed-responsive-4by3'>
           <iframe
+            title='music video'
             className='embed-responsive-item'
-            src='//www.youtube.com/embed/zpOULjyy-n8?rel=0'
+            src='//www.youtube.com/embed/YbsvFMEvPo4'
           />
         </div>
       </Container>
-
       <Breadcrumb className='crumb'>
         <Breadcrumb.Item href='/'>Home</Breadcrumb.Item>
         <Breadcrumb.Item href='/about'>About</Breadcrumb.Item>
@@ -84,8 +80,8 @@ export default Gallery;
 
 /**
 |--------------------------------------------------
-- Carousel (photo gallery of some photos you took) (with controls, indicators, and captions)
-- Embeds (few of your favorite music videos from YouTube)
+- Carousel (photo gallery of some photos you took) (with controls, indicators, and captions) DONE
+- Embeds (few of your favorite music videos from YouTube) DONE
 
 |--------------------------------------------------
 */

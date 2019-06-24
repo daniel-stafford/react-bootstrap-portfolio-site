@@ -1,5 +1,7 @@
 import React from 'react';
-import { Breadcrumb, Container, Card, Button } from 'react-bootstrap';
+import { Breadcrumb, Container, Row } from 'react-bootstrap';
+import ProjectCard from '../components/ProjectCard';
+
 import '../style/style.css';
 
 const Projects = () => {
@@ -7,74 +9,29 @@ const Projects = () => {
     <>
       <Container fluid='true' className='container'>
         <h2>Projects</h2>
-        <Card className='text-center'>
-          <Card.Header>Featured</Card.Header>
-          <Card.Body>
-            <Card.Title>Special title treatment</Card.Title>
-            <Card.Text>
-              With supporting text below as a natural lead-in to additional
-              content.
-            </Card.Text>
-            <Button variant='primary'>Go somewhere</Button>
-          </Card.Body>
-          <Card.Footer className='text-muted'>2 days ago</Card.Footer>
-        </Card>
+        <Row>
+          <ProjectCard
+            imageCardPath={require('../images/projects/adoption.png')}
+            cardTitle='Animal Adaoption'
+          />
+          <ProjectCard
+            imageCardPath={require('../images/projects/numbers.png')}
+            cardTitle='Number Facts Generator'
+          />
+          <ProjectCard
+            imageCardPath={require('../images/projects/lunch.png')}
+            cardTitle='Student Lunch Finder'
+          />
+          <ProjectCard
+            imageCardPath={require('../images/projects/portfolio.png')}
+            cardTitle='Portfolio Site'
+          />
+        </Row>
+        <Breadcrumb>
+          <Breadcrumb.Item href='/'>Home</Breadcrumb.Item>
+          <Breadcrumb.Item active>Projects</Breadcrumb.Item>
+        </Breadcrumb>
       </Container>
-      <div class='container'>
-        <button
-          type='button'
-          class='btn btn-primary'
-          data-toggle='modal'
-          data-target='#myModal'
-        >
-          Open modal
-        </button>
-        <div class='modal' id='myModal'>
-          <div class='modal-dialog'>
-            <div class='modal-content'>
-              <div class='modal-header bg-primary'>
-                <h4 class='modal-title text-white'>Custom sized Modal</h4>
-                <button type='button' class='close' data-dismiss='modal'>
-                  &times;
-                </button>
-              </div>
-
-              <div class='modal-body'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Dolorem corrupti tenetur consequuntur autem quos laudantium.
-              </div>
-
-              <div class='modal-footer'>
-                <button
-                  type='button'
-                  class='btn btn-primary'
-                  data-dismiss='modal'
-                >
-                  OK
-                </button>
-                <button
-                  type='button'
-                  class='btn btn-success'
-                  data-dismiss='modal'
-                >
-                  Save
-                </button>
-                <button
-                  type='button'
-                  class='btn btn-secondary'
-                  data-dismiss='modal'
-                >
-                  Cancel
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <Breadcrumb>
-        <Breadcrumb.Item href='/'>Home</Breadcrumb.Item>
-        <Breadcrumb.Item active>Projects</Breadcrumb.Item>
-      </Breadcrumb>
     </>
   );
 };

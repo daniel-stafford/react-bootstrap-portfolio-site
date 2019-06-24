@@ -1,18 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Jumbotron, Button, Breadcrumb, Container } from 'react-bootstrap';
+import { Jumbotron, Breadcrumb, Container } from 'react-bootstrap';
 
 const Home = () => {
   return (
     <>
       <Container className='container'>
         <Jumbotron>
-          <h2>Moi! I'm Daniel</h2>
-          <p>I'm a web developer living in Helsinki, Finland.</p>
+          <h2>Hey, I'm Daniel!</h2>
+          <p>Looking for a web developer? Get in touch!</p>
         </Jumbotron>
-        <Link to='/about'>
-          <Button variant='primary'>About</Button>
-        </Link>
       </Container>
 
       <Breadcrumb>

@@ -1,78 +1,76 @@
 import React from 'react';
-import { Breadcrumb, Container, Form, Button, Col } from 'react-bootstrap';
+// import { Breadcrumb, Container, Form, Button, Col } from 'react-bootstrap';
 import '../style/style.css';
+import { Form, Container, Button, Breadcrumb } from 'react-bootstrap';
+import axios from 'axios';
 
-const Contact = () => {
-  return (
-    <>
-      <Container fluid='true' className='container'>
-        <h2>Contact</h2>
-        <Form>
-          <Form.Row>
-            <Form.Group as={Col} controlId='formGridEmail'>
-              <Form.Label>Email</Form.Label>
+class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: '' };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
+  }
+
+  async handleSubmit(event) {
+    alert('Your favorite flavor is: ' + this.state.value);
+    event.preventDefault();
+    await axios('/api/form', {
+      fruit: this.state.value
+    });
+  }
+
+  render() {
+    return (
+      <>
+        <Container fluid='true' className='container'>
+          <h2>Contact</h2>
+          <Form>
+            <Form.Group controlId='formBasicName' style={{ width: '80%' }}>
+              <Form.Label>Name</Form.Label>
+              <Form.Control type='name' placeholder='Enter name' />
+            </Form.Group>
+            <Form.Group controlId='formBasicEmail' style={{ width: '80%' }}>
+              <Form.Label>Email address</Form.Label>
               <Form.Control type='email' placeholder='Enter email' />
+              <Form.Text className='text-muted'>
+                We'll never share your email with anyone else.
+              </Form.Text>
             </Form.Group>
 
-            <Form.Group as={Col} controlId='formGridPassword'>
-              <Form.Label>Password</Form.Label>
-              <Form.Control type='password' placeholder='Password' />
+            <Form.Group controlId='formBasicMessage' style={{ width: '80%' }}>
+              <Form.Label>Message</Form.Label>
+              <Form.Control type='message' placeholder='Message' />
             </Form.Group>
-          </Form.Row>
-
-          <Form.Group controlId='formGridAddress1'>
-            <Form.Label>Address</Form.Label>
-            <Form.Control placeholder='1234 Main St' />
-          </Form.Group>
-
-          <Form.Group controlId='formGridAddress2'>
-            <Form.Label>Address 2</Form.Label>
-            <Form.Control placeholder='Apartment, studio, or floor' />
-          </Form.Group>
-
-          <Form.Row>
-            <Form.Group as={Col} controlId='formGridCity'>
-              <Form.Label>City</Form.Label>
-              <Form.Control />
+            <Form.Group controlId='formBasicChecbox'>
+              <Form.Check type='checkbox' label='Check me out' />
             </Form.Group>
-
-            <Form.Group as={Col} controlId='formGridState'>
-              <Form.Label>State</Form.Label>
-              <Form.Control as='select'>
-                <option>Choose...</option>
-                <option>...</option>
-              </Form.Control>
-            </Form.Group>
-
-            <Form.Group as={Col} controlId='formGridZip'>
-              <Form.Label>Zip</Form.Label>
-              <Form.Control />
-            </Form.Group>
-          </Form.Row>
-
-          <Form.Group id='formGridCheckbox'>
-            <Form.Check type='checkbox' label='Check me out' />
-          </Form.Group>
-
-          <Button variant='primary' type='submit'>
-            Submit
-          </Button>
-        </Form>
-      </Container>
-      <Breadcrumb className='crumb'>
-        <Breadcrumb.Item href='#'>Home</Breadcrumb.Item>
-        <Breadcrumb.Item active>Contact</Breadcrumb.Item>
-      </Breadcrumb>
-    </>
-  );
-};
+            <Button variant='primary' type='submit'>
+              Submit
+            </Button>
+          </Form>
+        </Container>
+        <Breadcrumb className='crumb'>
+          <Breadcrumb.Item href='/'>Home</Breadcrumb.Item>
+          <Breadcrumb.Item href='/about'>About</Breadcrumb.Item>
+          <Breadcrumb.Item active>Who Am I?</Breadcrumb.Item>
+        </Breadcrumb>
+      </>
+    );
+  }
+}
 
 export default Contact;
 
 /**
 |--------------------------------------------------
 - Form
-- Input group (name, email)
+- Input group (name, email) DONE
 - Radio button (for gender)
 - Dropdowns (in Finland or outside of Finland)
 - Buttons (submit and refresh)
