@@ -3,16 +3,16 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import CustomNavbar from './components/CustomNavbar';
 
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Education from './components/Education';
-import Projects from './components/Projects';
-import Resume from './components/Resume';
-import Gallery from './components/Gallery';
-import References from './components/References';
-import Skills from './components/Skills';
-import NoMatch from './components/NoMatch';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Education from './pages/Education';
+import Projects from './pages/Projects';
+import Resume from './pages/Resume';
+import Gallery from './pages/Gallery';
+import References from './pages/References';
+import Skills from './pages/Skills';
+import NoMatch from './pages/NoMatch';
 
 export class App extends Component {
   render() {
