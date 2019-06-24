@@ -11,15 +11,70 @@ const Education = () => {
         <h2>Education</h2>
         <div>
           <Button color='primary' id='toggler' style={{ marginBottom: '1rem' }}>
-            Toggle
+            WestView High School
           </Button>
           <UncontrolledCollapse toggler='#toggler'>
             <Card>
               <CardBody>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt magni, voluptas debitis similique porro a molestias
-                consequuntur earum odio officiis natus, amet hic, iste sed
-                dignissimos esse fuga! Minus, alias.
+                <p>Diploma, 2003</p>
+                <p>Portland, Oregon, USA</p>
+              </CardBody>
+            </Card>
+          </UncontrolledCollapse>
+        </div>
+      </Container>
+      <Container fluid='true' className='container'>
+        <div>
+          <Button
+            color='primary'
+            id='toggler1'
+            style={{ marginBottom: '1rem' }}
+          >
+            University of Oregon
+          </Button>
+          <UncontrolledCollapse toggler='#toggler1'>
+            <Card>
+              <CardBody>
+                <p>Bachelor of Arts in Latin, 2008</p>
+                <p>Eugene, Oregon, USA</p>
+              </CardBody>
+            </Card>
+          </UncontrolledCollapse>
+        </div>
+      </Container>
+      <Container fluid='true' className='container'>
+        <div>
+          <Button
+            color='primary'
+            id='toggler2'
+            style={{ marginBottom: '1rem' }}
+          >
+            JAMK{' '}
+          </Button>
+          <UncontrolledCollapse toggler='#toggler2'>
+            <Card>
+              <CardBody>
+                <p>Bachelor of Healthcare in Nursing, 2017</p>
+                <p>Jyväskylä, Finland</p>
+              </CardBody>
+            </Card>
+          </UncontrolledCollapse>
+        </div>
+      </Container>
+      <Container fluid='true' className='container'>
+        <div>
+          <Button
+            color='primary'
+            id='toggler3'
+            style={{ marginBottom: '1rem' }}
+          >
+            Aalto University
+          </Button>
+          <UncontrolledCollapse toggler='#toggler3'>
+            <Card>
+              <CardBody>
+                <p>Bachelor of Technology in Data Science, Expected 2020</p>
+                <p>Helsinki, Finland</p>
               </CardBody>
             </Card>
           </UncontrolledCollapse>

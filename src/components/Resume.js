@@ -22,3 +22,11 @@ const Resume = () => {
 };
 
 export default Resume;
+
+/**
+|--------------------------------------------------
+- Button Group (for downloading your CV in two Word and PDF formats)
+- Tables (transcript information)
+
+|--------------------------------------------------
+*/
