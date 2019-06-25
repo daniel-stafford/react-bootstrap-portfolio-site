@@ -1,3 +1,7 @@
+html * {
+  font-family: 'Roboto', sans-serif;
+}
+
 .breadcrumb {
   position: sticky;
   right: 0;
@@ -30,7 +34,6 @@ img {
 
 .row {
   justify-content: center;
-  width: 60%;
 }
 
 .card-img-top {
