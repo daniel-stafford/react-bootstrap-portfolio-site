@@ -7,23 +7,22 @@ const About = () => {
     <>
       <Container fluid='true' className='container'>
         <Jumbotron>
-          <h2>Moi! I'm Daniel</h2>
+          <h2>Who am I?</h2>
           <ul>
             <li>I'm an American living and studying in Helsinki, Finland.</li>
             <li>
               Having lived in Finland for over five years, I consider sauna an
               essential part of life.
             </li>
-            <li>Puhun ihan OK suomee </li>
             <li>
               I'm currently studying data science at Aalto University but have
               been learning web development for the past few years - love
               constant need to learn something new.
             </li>
             <li>
-              When I'm not coding, you can find me playing piano, riding my
-              mountain bike, learning obscure European history, or trying to
-              learn the latest Finnish slang.
+              When I'm not coding, you can find me playing Abba covers on the
+              piano, popping endos on my mountain bike, or trying to learn the
+              latest Finnish slang.
             </li>
           </ul>
           <Image src={require('../images/profile2.jpg')} />

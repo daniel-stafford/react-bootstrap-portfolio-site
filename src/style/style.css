@@ -21,6 +21,7 @@ img {
 .jumbotron {
   text-align: center;
   padding: 20px;
+  width: 80%;
 }
 
 .projectContainer {
@@ -29,6 +30,7 @@ img {
 
 .row {
   justify-content: center;
+  width: 60%;
 }
 
 .card-img-top {
@@ -44,4 +46,43 @@ img {
 
 .progress {
   margin-top: 10px;
+}
+
+li {
+  list-style-position: inside;
+  margin-bottom: 10px;
+}
+
+input {
+  margin: 5px;
+}
+
+.dropdownForm {
+  margin: 10px;
+}
+
+.formButtons {
+  margin: 10px;
+}
+
+.social-icon {
+  margin: 10px;
+}
+.styles_closeIcon__1QwbI {
+  margin: 5px;
+  display: overflow;
+}
+h5 {
+  padding: 10px;
+}
+
+.modal-header {
+  color: white;
+  background-color: #5bc0de;
+  margin: 10px;
+}
+
+.modal-body {
+  font-size: 14px;
+  font-weight: normal;
 }

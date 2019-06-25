@@ -27,8 +27,9 @@ const Resume = () => {
             Download as Word Doc
           </a>
         </Row>
+        <hr />
       </Container>
-      <Container>
+      <Container fluid='true' className='container'>
         <Table striped bordered hover variant='dark'>
           <thead>
             <tr>
@@ -81,6 +82,7 @@ const Resume = () => {
           </tbody>
         </Table>
       </Container>
+
       <Breadcrumb>
         <Breadcrumb.Item href='/'>Home</Breadcrumb.Item>
         <Breadcrumb.Item href='/about'>About</Breadcrumb.Item>

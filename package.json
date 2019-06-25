@@ -9,6 +9,7 @@
     "react-bootstrap": "^1.0.0-beta.9",
     "react-bootstrap-carousel": "^3.4.1",
     "react-dom": "^16.8.6",
+    "react-responsive-modal": "^4.0.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "reactstrap": "^8.0.0",
@@ -36,6 +37,7 @@
     ]
   },
   "devDependencies": {
-    "css-loader": "^3.0.0"
+    "css-loader": "^3.0.0",
+    "react-social-icons": "^4.1.0"
   }
 }

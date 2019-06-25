@@ -1,52 +1,68 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Card } from 'react-bootstrap';
+import Modal from 'react-responsive-modal';
 
-function ProjectCard(props) {
-  return (
-    <div className='projectContainer'>
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant='top' src={props.imageCardPath} />
-        <Card.Body>
-          <Card.Title>{props.cardTitle}</Card.Title>
-          <button
-            type='button'
-            className='btn btn-primary'
-            data-toggle='modal'
-            data-target='#myModal'
-          >
-            Learn more{' '}
-          </button>
-          <div className='modal' id='myModal'>
-            <div className='modal-dialog'>
-              <div className='modal-content'>
-                <div className='modal-header bg-primary'>
-                  <h4 className='modal-title text-white'>Custom sized Modal</h4>
-                  <button type='button' className='close' data-dismiss='modal'>
-                    &times;
-                  </button>
-                </div>
+import ModalHeader from 'react-bootstrap/ModalHeader';
+import ModalBody from 'react-bootstrap/ModalBody';
+import ModalFooter from 'react-bootstrap/ModalFooter';
 
-                <div className='modal-body'>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dolorem corrupti tenetur consequuntur autem quos laudantium.
-                </div>
+export default class ProjectCard extends Component {
+  state = {
+    open: false
+  };
 
-                <div className='modal-footer'>
-                  <button
-                    type='button'
-                    className='btn btn-secondary'
-                    data-dismiss='modal'
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Card.Body>
-      </Card>
-    </div>
-  );
+  onOpenModal = () => {
+    this.setState({ open: true });
+  };
+
+  onCloseModal = () => {
+    this.setState({ open: false });
+  };
+
+  render() {
+    const { open } = this.state;
+    return (
+      <div>
+        <div className='projectContainer'>
+          <Card style={{ width: '18rem' }}>
+            <Card.Img variant='top' src={this.props.imageCardPath} />
+            <Card.Body>
+              <Card.Title>{this.props.cardTitle}</Card.Title>
+              <button
+                type='button'
+                className='btn btn-primary'
+                data-toggle='modal'
+                data-target='#myModal'
+                onClick={this.onOpenModal}
+              >
+                Learn More
+              </button>
+              <Modal open={open} center onClose={this.onCloseModal}>
+                <h5 style={{ margin: '10px' }}>
+                  <ModalHeader>{this.props.cardTitle}</ModalHeader>
+                  <ModalBody>{this.props.modalBody}</ModalBody>
+                  <ModalFooter>
+                    <button
+                      type='button'
+                      className='btn btn-success'
+                      data-dismiss='modal'
+                    >
+                      <a
+                        className='text-white'
+                        href={this.props.sourceCode}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        View the Code
+                      </a>
+                    </button>
+                  </ModalFooter>
+                </h5>
+              </Modal>
+            </Card.Body>
+          </Card>
+        </div>
+      </div>
+    );
+  }
 }
-
-export default ProjectCard;
