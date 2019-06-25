@@ -33,28 +33,50 @@ const Resume = () => {
           <thead>
             <tr>
               <th>#</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Username</th>
+              <th>Course Name</th>
+              <th>University</th>
+              <th>Subjects</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>1</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td>Programming 1</td>
+              <td>Aalto</td>
+              <td>Basics of Scala, Object Oriented Programming</td>
             </tr>
             <tr>
               <td>2</td>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <td>Programming 2</td>
+              <td>Aalto</td>
+              <td>Intermediate Scala, Functional Programming Basics </td>
             </tr>
             <tr>
               <td>3</td>
-              <td colSpan='2'>Larry the Bird</td>
-              <td>@twitter</td>
+              <td>Programming Studio 2</td>
+              <td>Aalto</td>
+              <td>
+                Developing Own Scala Project, Unified Modeling Language, Version
+                Control
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Developing Modern Web Platforms</td>
+              <td>Metropolia</td>
+              <td>Basics of HTML, CSS, & Vanilla JavasSript </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Mastering Git</td>
+              <td>Metropolia</td>
+              <td>Version Control</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Responsive Web Applications with Bootstrap & CSS</td>
+              <td>Metropolia</td>
+              <td>Mobile-first Developing, CSS Frameworks</td>
             </tr>
           </tbody>
         </Table>
@@ -67,13 +89,12 @@ const Resume = () => {
     </>
   );
 };
-
 export default Resume;
 
 /**
 |--------------------------------------------------
 - Button Group (for downloading your CV in two Word and PDF formats) DONE
-- Tables (transcript information)
+- Tables (transcript information) DONE
 
 |--------------------------------------------------
 */
