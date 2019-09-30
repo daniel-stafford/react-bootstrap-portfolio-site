@@ -89,3 +89,10 @@ h5 {
   font-size: 14px;
   font-weight: normal;
 }
+.modal-footer {
+  display: block;
+}
+
+#viewCode {
+  float: right;
+}
