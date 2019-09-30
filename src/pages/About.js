@@ -1,6 +1,6 @@
-import React from 'react';
-import { Breadcrumb, Container, Jumbotron, Image } from 'react-bootstrap';
-import '../style/style.css';
+import React from 'react'
+import { Breadcrumb, Container, Jumbotron, Image } from 'react-bootstrap'
+import '../style/style.css'
 
 const About = () => {
   return (
@@ -16,8 +16,9 @@ const About = () => {
             </li>
             <li>
               I'm currently studying data science at Aalto University but have
-              been learning web development for the past few years - love
-              constant need to learn something new.
+              been learning web development for the past few years - enjoy the
+              rapidly evolving and collaborative nature of the JavaScript
+              community.
             </li>
             <li>
               When I'm not coding, you can find me playing Abba covers on the
@@ -34,10 +35,10 @@ const About = () => {
         <Breadcrumb.Item active>Who Am I?</Breadcrumb.Item>
       </Breadcrumb>
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default About
 
 /**
 |--------------------------------------------------
