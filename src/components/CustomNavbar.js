@@ -17,7 +17,6 @@ const CustomNavbar = () => {
               <NavDropdown.Item href='/education'>Education</NavDropdown.Item>
               <NavDropdown.Item href='/skills'>Skills</NavDropdown.Item>
               <NavDropdown.Item href='/references'>References</NavDropdown.Item>
-              {/* <NavDropdown.Item href='/gallery'>Gallery</NavDropdown.Item> */}
             </NavDropdown>
             <Nav.Link href='/projects'>Projects</Nav.Link>
             <Nav.Link href='/contact'>Contact</Nav.Link>
