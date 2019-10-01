@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/css/main.3a4fd712.chunk.css",
+    "main.js": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/js/main.85107801.chunk.js",
+    "main.js.map": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/js/main.85107801.chunk.js.map",
+    "runtime~main.js": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/js/runtime~main.33020eaa.js",
+    "runtime~main.js.map": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/js/runtime~main.33020eaa.js.map",
+    "static/js/2.114ee16b.chunk.js": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/js/2.114ee16b.chunk.js",
+    "static/js/2.114ee16b.chunk.js.map": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/js/2.114ee16b.chunk.js.map",
+    "index.html": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/index.html",
+    "precache-manifest.2ac08f17d52c6c04b6bee80eed2dfb2d.js": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/precache-manifest.2ac08f17d52c6c04b6bee80eed2dfb2d.js",
+    "service-worker.js": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/service-worker.js",
+    "static/css/main.3a4fd712.chunk.css.map": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/css/main.3a4fd712.chunk.css.map",
+    "static/media/Profile.pdf": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/media/Profile.e70b9bf5.pdf",
+    "static/media/Resume.docx": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/media/Resume.1c1e071f.docx",
+    "static/media/adoption.png": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/media/adoption.ceee52e7.png",
+    "static/media/lunch.png": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/media/lunch.0ac0ba7d.png",
+    "static/media/numbers.png": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/media/numbers.3c84d9ac.png",
+    "static/media/portfolio.png": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/media/portfolio.94110fff.png",
+    "static/media/profile2.jpg": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/media/profile2.e8fe3317.jpg",
+    "static/media/profile3.jpeg": "%20//daniel-stafford.github.io/react-boostrap-portfolio-site/static/media/profile3.cf2ff452.jpeg"
+  }
+}
