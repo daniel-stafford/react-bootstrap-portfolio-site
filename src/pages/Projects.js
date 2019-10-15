@@ -13,14 +13,15 @@ const Projects = () => {
           <ProjectCard
             imageCardPath={require('../images/projects/adoption.png')}
             cardTitle='Animal Adoption'
-            modalBody='A simple React application developed in The Shortcut React Club'
+            modalBody='A simple React application developed in The Shortcut React Club with another developer. A good example of quick, collorbarative work.  To login = Username: user Password: password'
             sourceCode='https://github.com/daniel-stafford/Animal-Tinder'
+            herokuCode="https://stafford-animal-adoption.herokuapp.com/"
           />
 
           <ProjectCard
             imageCardPath={require('../images/projects/numbers.png')}
             cardTitle='Number Facts Generator'
-            modalBody='A simple React application that fetches facts about numbers from an external API'
+            modalBody='A simple React application that fetches facts about numbers from an external API.'
             sourceCode='https://github.com/daniel-stafford/Math-React'
           />
           <ProjectCard

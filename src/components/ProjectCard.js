@@ -61,6 +61,8 @@ export default class ProjectCard extends Component {
                       type='button'
                       className='btn btn-success'
                       data-dismiss='modal'
+                      href={this.props.herokuCode}
+
                     >
                       <a
                         className='text-white'
